@@ -27,10 +27,10 @@
                 margin-right: auto;
                 max-width: 768px;
             }
-          header {
-            background-color: rgb(224, 43, 7);
-            color: white;
-          }
+            header {
+                background-color: rgb(224, 43, 7);
+                color: white;
+            }
 
             img {
                 width: 50%;
@@ -40,6 +40,22 @@
             ul {
                 list-style-type: none;
                 padding: none;
+            }
+            table {
+                border: 2px solid whitesmoke;
+                width: 100%;
+                padding: px;
+                text-align: center;
+                color: black;
+            }
+            table th {
+                background-color: rgb(224, 43, 7);
+                color: white;
+                height: 30px;
+            }
+            table td {
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
             }
         </style>
     </head>
@@ -69,13 +85,58 @@
                 <h1>Projects</h1>
                 <ul>
                     <li>
-                        <img src="./media/Project.1.png" alt="Photo of Project 1">
-                        Web Shop</li>
+                        <div><img src="./media/Project.1.png" alt="Photo of Project 1"></div>
+                        <div>Web Shop</div>
+                    </li>
                     <li>
-                        <img src="./media/Project.2.png" alt="Photo of Project 2">
-                        Company website</li>
+                        <div><img src="./media/Project.2.png" alt="Photo of Project 2"></div>
+                        <div>Company website</div>
+                    </li>
                 
                 </ul>
+            </section>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Q1</th>
+                            <th>Q2</th>
+                            <th>Q3</th>
+                            <th>Q4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sat</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>20</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Dan</td>
+                            <td>100</td>
+                            <td>150</td>
+                            <td>200</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>Tjedan</td>
+                            <td>145</td>
+                            <td>160</td>
+                            <td>185</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td>Mjesec</td>
+                            <td>300</td>
+                            <td>325</td>
+                            <td>350</td>
+                            <td>365</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer class="wrapper">
