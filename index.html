@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta type="image/png" rel="icon" sizes="16x16" href="./media/icons8-star-64.png">
+        <link type="image/png" rel="icon" sizes="16x16" href="./media/icons8-star-64.png">
         <title>Portfolio Website</title>
         <style>
             body {
-                background-color: chocolate;
+                background-color: rgb(42, 139, 3);
                 color: black;
                 font-family: sans-serif;
             }
@@ -22,12 +22,16 @@
                 padding: 16px 16px 16px 16px;
                 margin-bottom: 16px;
             }
-            main {
+            .wrapper {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 768px;
             }
-            
+          header {
+            background-color: rgb(224, 43, 7);
+            color: white;
+          }
+
             img {
                 width: 50%;
                 aspect-ratio: 16/9;
@@ -40,7 +44,10 @@
         </style>
     </head>
     <body>
-        <main>
+        <header class="wrapper">
+            <h1>Welcome to my portfolio</h1>
+        </header>
+        <main class="wrapper">
             <section>
                 <h1>About me</h1>
                 <p>My name is <strong>Franjo Grbes</strong> and I'm going to be a <strong>Frontend developer</strong>!</p>
@@ -71,5 +78,12 @@
                 </ul>
             </section>
         </main>
+        <footer class="wrapper">
+            <small>
+                <p>&copy; 2023 Franjo Grbes</p>
+                <p>All rights reserved.</p>
+                <p>Made with ❤️ in Croatia</p>
+            </small>
+        </footer>
     </body>
 </html>
