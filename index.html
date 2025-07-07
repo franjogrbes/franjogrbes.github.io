@@ -73,6 +73,7 @@
                 margin-top: 16px;
                 border: none;
                 border-radius: 6px;
+                cursor: pointer;
             }
             button:hover {
                 background-color: rgb(224, 43, 7);
@@ -171,54 +172,56 @@
             </section>
             <section>
                 <h2>Request a quote for your project</h2>
-                <form action="">
-                    <div>
-                        <label for="name">Your first and last name:</label>
-                        <input class="input" type="text" id="name" name="full_Name" required>
-                    </div>
-                    <div>
-                        <label for="name">Your email:</label>
-                        <input class="input" type="email" required>
-                    </div>
-                    <div>
-                        <label for="title">Your title:</label>
-                        <select class="input" name="title" id="title" required>
-                            <option value="" disabled selected>Select your title</option>
-                            <option value="mr">Mr.</option>
-                            <option value="mrs">Mrs.</option>
-                            <option value="div">Diverse</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="project">Describe you project:</label>
-                        <textarea name="project" rows="5" cols="60" required></textarea>
-                    </div>
-                    <div>
-                        <label for="budget">Your budget:</label>
-                        <select class="input" name="budget" id="budget" required>
-                            <option value="" disabled selected>Select your budget...</option>
-                            <option value="1"> < 10000€</option>
-                            <option value="2">10000€ - 100000€</option>
-                            <option value="3"> > 100000€</option>
-                        </select>
-                    </div>
-                    <div class="radio">
-                        <p>Service type:</p>
-                        <label for=""><input type="radio" value="de" name="service" required>Design</label>
-                        <label for=""><input type="radio" value="dv" name="service" required>Development</label>
-                    </div>
+                <div class="form">
+                    <form action="">
+                        <div>
+                            <label for="name">Your first and last name:</label>
+                            <input class="input" type="text" id="name" name="full_Name" required>
+                        </div>
+                        <div>
+                            <label for="name">Your email:</label>
+                            <input class="input" type="email" required>
+                        </div>
+                        <div>
+                            <label for="title">Your title:</label>
+                            <select class="input" name="title" id="title" required>
+                                <option value="" disabled selected>Select your title</option>
+                                <option value="mr">Mr.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="div">Diverse</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="project">Describe you project:</label>
+                            <textarea name="project" rows="5" cols="60" required></textarea>
+                        </div>
+                        <div>
+                            <label for="budget">Your budget:</label>
+                            <select class="input" name="budget" id="budget" required>
+                                <option value="" disabled selected>Select your budget...</option>
+                                <option value="1"> < 10000€</option>
+                                <option value="2">10000€ - 100000€</option>
+                                <option value="3"> > 100000€</option>
+                            </select>
+                        </div>
+                        <div class="radio">
+                            <p>Service type:</p>
+                            <label for=""><input type="radio" value="de" name="service" required>Design</label>
+                            <label for=""><input type="radio" value="dv" name="service" required>Development</label>
+                        </div>
 
 
-                    <div>
-                        <input type="checkbox" id="preferences" value="true" required>
-                        <label for="preferences">GDPR consent</label>
-                    </div>
-                    <div>
-                        <button type="submit">
-                            Send request
-                        </button>
-                    </div>
-                </form>
+                        <div>
+                            <input type="checkbox" id="preferences" value="true" required>
+                            <label for="preferences">GDPR consent</label>
+                        </div>
+                        <div>
+                            <button type="submit">
+                                Send request
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="wrapper">
